@@ -1,2 +1,2 @@
 # Algorithms
-To solve a problem with set of rules
+To solve a problem with a set of rules
