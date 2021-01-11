@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Algorithms
 {
@@ -44,6 +42,74 @@ namespace Algorithms
             }
 
             Console.WriteLine($"Merge Sorting using two arrays : [{string.Join(",", C)}]");
+        }
+
+        /// <summary>
+        /// Recursive mechanism
+        /// </summary>
+        /// <param name="array"></param>
+        /// <param name="lower"></param>
+        /// <param name="high"></param>
+        public static void RecursiveMergeSort(int[] array, int lower, int high)
+        {
+            int mid;
+            if (lower < high)
+            {
+                //middle portion of the array
+                mid = (lower + high) / 2;
+                //leftside array
+                RecursiveMergeSort(array, lower, mid);
+                //right side array
+                RecursiveMergeSort(array, mid+1, high);
+                //merging two arrays into one
+                RecursiveMerge(array, lower, mid, high);
+            }
+            
+        }
+
+        /// <summary>
+        /// Base concepts of divide and conquer method.
+        /// </summary>
+        /// <param name="array"></param>
+        /// <param name="lower"></param>
+        /// <param name="mid"></param>
+        /// <param name="high"></param>
+        private static void RecursiveMerge(int[] array, int lower, int mid, int high)
+        {
+            int i = lower;
+            int j = mid + 1;
+            int k = lower;
+            int[] auxiliary = new int[array.Length];
+
+            while (i <= mid && j <= high)
+            {
+                if(array[i] < array[j])
+                {
+                    auxiliary[k++] = array[i++];
+                }
+                else
+                {
+                    auxiliary[k++] = array[j++];
+                }
+            }
+
+            for(;i <= mid; i++)
+            {
+                auxiliary[k++] = array[i];
+            }
+
+            for (; j <= high; j++)
+            {
+                auxiliary[k++] = array[j];
+            }
+
+            for (i = lower; i <= high; i++)
+            {
+                array[i] = auxiliary[i];
+            }
+
+            
+
         }
     }
 }
