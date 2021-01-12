@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace Algorithms.Multidimensional_Arrays
 {
@@ -17,6 +19,7 @@ namespace Algorithms.Multidimensional_Arrays
                                            {6, 15, 26, 37} ,   /*  initializers for row indexed by 1 */
                                            {5, 16, 38, 81}     /*  initializers for row indexed by 2 */
                                         };
+            // Elements in the array like rows counts.
             int totalElements = 3;
 
             for (int i = 0; i < totalElements; i++)
