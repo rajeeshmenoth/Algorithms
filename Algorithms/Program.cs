@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Algorithms.Multidimensional_Arrays;
+using System;
 
 namespace Algorithms
 {
@@ -12,6 +13,12 @@ namespace Algorithms
             MergeSort.MergeSortWithTwoArray();
             MergeSort.RecursiveMergeSort(array, 0, array.Length - 1);
             Console.WriteLine($"Recursive Merge Sort : [{string.Join(",", array)}]");
+            #endregion
+
+            Console.WriteLine();
+            Console.WriteLine("Multidimensional Arrays!");
+            #region Multidimensional Array
+            TwoDimensionalArray.ReplaceDiagonalWithStar();
             #endregion
             Console.ReadLine();
 

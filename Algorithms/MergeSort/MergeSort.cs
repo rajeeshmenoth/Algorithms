@@ -4,19 +4,26 @@ namespace Algorithms
 {
     public class MergeSort
     {
+        /// <summary>
+        /// Merge sorting with two sorted arrays
+        /// </summary>
         public static void MergeSortWithTwoArray()
         {
+            // Sorted array A
             int[] A = new int[] { 2, 5, 6, 8 };
+            // Sorted array B
             int[] B = new int[] { 10, 12, 22, 35 };
 
+            // Finding the length of array A & array B
             int lenthOfArrayA = A.Length;
             int lenthOfArrayB = B.Length;
 
+            // Initialize starting point of all three arrays.
             int i = 0;
             int j = 0; 
             int k = 0;
 
-            //Auxiliary array
+            // Auxiliary array using for storing merged array.
             int[] C = new int[lenthOfArrayA + lenthOfArrayB];
 
             while (i < lenthOfArrayA && j < lenthOfArrayB)
@@ -57,9 +64,9 @@ namespace Algorithms
             {
                 //middle portion of the array
                 mid = (lower + high) / 2;
-                //leftside array
+                //leftside portion of the array
                 RecursiveMergeSort(array, lower, mid);
-                //right side array
+                //right side portion of the array
                 RecursiveMergeSort(array, mid+1, high);
                 //merging two arrays into one
                 RecursiveMerge(array, lower, mid, high);
