@@ -15,11 +15,20 @@ namespace Algorithms
             Console.WriteLine($"Recursive Merge Sort : [{string.Join(",", array)}]");
             #endregion
 
+            #region Binary Search
+            Console.WriteLine();
+            Console.WriteLine("Binary Search");
+            int[] binarySearchArray = new int[] { 2, 8, 12, 22, 35, 88, 100 };
+            Console.WriteLine($"The index of given element in a Binary Search is : {BinarySearch.BinarySearch.BinarySearchAlgorithm(binarySearchArray, binarySearchArray.Length, 88)}");
+            #endregion
+
             Console.WriteLine();
             Console.WriteLine("Multidimensional Arrays!");
             #region Multidimensional Array
             TwoDimensionalArray.ReplaceDiagonalWithStar();
             #endregion
+
+            
             Console.ReadLine();
 
         }
