@@ -4,7 +4,7 @@ namespace Algorithms.BubbleSort
 {
     public static class BubbleSort
     {
-        public static void BubbleSortAlgorith(int[] array, int arrayElementsCount)
+        public static void BubbleSortAlgorithm(int[] array, int arrayElementsCount)
         {
             int temp = 0;
 

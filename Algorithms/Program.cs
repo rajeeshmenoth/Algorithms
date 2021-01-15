@@ -22,11 +22,17 @@ namespace Algorithms
             Console.WriteLine($"The index of given element in a Binary Search is : {BinarySearch.BinarySearch.BinarySearchAlgorithm(binarySearchArray, binarySearchArray.Length, 88)}");
             #endregion
 
-            #region
+            #region Bubble Sort
             Console.WriteLine();
             Console.WriteLine("Bubble Sort!");
             int[] bubbleSortArray = new int[] { 10, 8, 12, 22, 100, 88, 101, 4 };
-            BubbleSort.BubbleSort.BubbleSortAlgorith(bubbleSortArray, bubbleSortArray.Length);
+            BubbleSort.BubbleSort.BubbleSortAlgorithm(bubbleSortArray, bubbleSortArray.Length);
+            #endregion
+
+            #region Count Sort
+            Console.WriteLine();
+            Console.WriteLine("Count Sort!");
+            CountSort.CountSort.CountSortAlgoritm();
             #endregion
 
             Console.WriteLine();
