@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Algorithms.BinarySearch
+﻿namespace Algorithms.BinarySearch
 {
     public static class BinarySearch
     {
