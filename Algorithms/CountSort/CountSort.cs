@@ -16,7 +16,7 @@ namespace Algorithms.CountSort
             // Finiding highest value in an array.
             int maxValue = array.Max();
 
-            // The highest value add as a space in a array.
+            // The highest value add as a space in an array.
             int[] auxiliary = new int[maxValue + 1];
 
             // Add 0's in array
