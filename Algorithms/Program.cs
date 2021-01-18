@@ -35,6 +35,12 @@ namespace Algorithms
             CountSort.CountSort.CountSortAlgoritm();
             #endregion
 
+            #region Fibonacci Series
+            Console.WriteLine();
+            Console.WriteLine("Fibonacci Series!");
+            FibonacciSeries.FibonacciSeries.FibonacciSeriesAlgorithm();
+            #endregion
+
             Console.WriteLine();
             Console.WriteLine("Multidimensional Arrays!");
             #region Multidimensional Array
