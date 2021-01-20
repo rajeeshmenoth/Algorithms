@@ -41,6 +41,12 @@ namespace Algorithms
             FibonacciSeries.FibonacciSeries.FibonacciSeriesAlgorithm();
             #endregion
 
+            #region Factorial
+            Console.WriteLine();
+            Console.WriteLine("Factorial !!");
+            Factorial.Factorial.FactorialMethod(5);
+            #endregion
+
             Console.WriteLine();
             Console.WriteLine("Multidimensional Arrays!");
             #region Multidimensional Array
