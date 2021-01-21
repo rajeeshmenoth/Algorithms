@@ -47,6 +47,12 @@ namespace Algorithms
             Factorial.Factorial.FactorialMethod(5);
             #endregion
 
+            #region Reverse a String
+            Console.WriteLine();
+            Console.WriteLine("Reverse a String !!");
+            Basics.ReverseAString.ReverseString("rajeesh");
+            #endregion
+
             Console.WriteLine();
             Console.WriteLine("Multidimensional Arrays!");
             #region Multidimensional Array
