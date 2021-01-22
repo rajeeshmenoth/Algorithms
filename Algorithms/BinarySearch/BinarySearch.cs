@@ -3,7 +3,7 @@
     public static class BinarySearch
     {
         /// <summary>
-        /// Finding the position of a given number using Binary Search Algorithm ( Sorted array should be use for binary search algorithm).
+        /// Find the position of a given number using Binary Search Algorithm ( Sorted array should be use for binary search algorithm).
         /// </summary>
         /// <returns></returns>
         public static int BinarySearchAlgorithm(int[] array, int arrayElements, int data)
