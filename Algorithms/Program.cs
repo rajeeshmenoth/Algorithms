@@ -47,6 +47,11 @@ namespace Algorithms
             Factorial.Factorial.FactorialMethod(5);
             #endregion
 
+            #region Recursion
+            Recursion.Recursion.RecursionAscending(3);
+            Recursion.Recursion.RecursionDescending(3);
+            #endregion
+
             #region Reverse a String
             Console.WriteLine();
             Console.WriteLine("Reverse a String !!");
