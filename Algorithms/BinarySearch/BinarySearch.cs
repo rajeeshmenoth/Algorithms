@@ -14,7 +14,7 @@
             while(startingPoint < endingPoint)
             {
                 // Finding the middle element of each divide
-                int mid = startingPoint + endingPoint;
+                int mid = ( startingPoint + endingPoint ) / 2;
 
                 if (array[mid] == data)
                     return mid;

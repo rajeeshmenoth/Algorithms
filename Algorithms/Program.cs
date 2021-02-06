@@ -59,9 +59,13 @@ namespace Algorithms
             Basics.ReverseAString.ReverseString("rajeesh");
             #endregion
 
-            #region MinAndMax
+
+            #region MinAndMax Array Problems
+            Console.WriteLine("Minimum and Maximum Problems in an Arrays!");
             int[] arrayElement = { 10, 88, 1, 55, 48 };
             MinAndMax.MinAndMaxSumInAnArray(arrayElement);
+            int[] arrMinAndMax = { 3, 10, 2, 5, 7, 10 };
+            MinAndMax.FindMaxValueCountInAnArray(arrMinAndMax);
             #endregion
 
             Console.WriteLine();
