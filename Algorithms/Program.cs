@@ -1,4 +1,5 @@
-﻿using Algorithms.Multidimensional_Arrays;
+﻿using Algorithms.Basics;
+using Algorithms.Multidimensional_Arrays;
 using System;
 
 namespace Algorithms
@@ -56,6 +57,11 @@ namespace Algorithms
             Console.WriteLine();
             Console.WriteLine("Reverse a String !!");
             Basics.ReverseAString.ReverseString("rajeesh");
+            #endregion
+
+            #region MinAndMax
+            int[] arrayElement = { 10, 88, 1, 55, 48 };
+            MinAndMax.MinAndMaxSumInAnArray(arrayElement);
             #endregion
 
             Console.WriteLine();
