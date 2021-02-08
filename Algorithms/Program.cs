@@ -1,4 +1,5 @@
 ﻿using Algorithms.Basics;
+using Algorithms.Interview;
 using Algorithms.Multidimensional_Arrays;
 using System;
 
@@ -59,6 +60,10 @@ namespace Algorithms
             Basics.ReverseAString.ReverseString("rajeesh");
             #endregion
 
+            #region Missing number problem in an array
+            MissingNumberProblem.FindMissingNumberInAnArray();
+            #endregion
+
 
             #region MinAndMax Array Problems
             Console.WriteLine("Minimum and Maximum Problems in an Arrays!");
@@ -73,6 +78,7 @@ namespace Algorithms
             #region Multidimensional Array
             TwoDimensionalArray.ReplaceDiagonalWithStar();
             #endregion
+
 
 
             
