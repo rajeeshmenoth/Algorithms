@@ -77,6 +77,8 @@ namespace Algorithms
             Console.WriteLine("Multidimensional Arrays!");
             #region Multidimensional Array
             TwoDimensionalArray.ReplaceDiagonalWithStar();
+            Console.WriteLine("Matrix Rotation");
+            TwoDimensionalArray.NinetyDegreeMatrixRotation();
             #endregion
 
 
