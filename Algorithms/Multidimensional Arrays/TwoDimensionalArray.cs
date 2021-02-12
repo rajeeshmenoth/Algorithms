@@ -41,37 +41,22 @@ namespace Algorithms.Multidimensional_Arrays
         /// </summary>
         public static void NinetyDegreeMatrixRotation()
         {
-            // 3 rows and 4 columns
-            int[,] a = new int[3, 3]    {
-                                           {10, 22, 35} ,   /*  row indexed by 0 */
-                                           {6, 15, 26} ,   /*  row indexed by 1 */
-                                           {5, 16, 38}     /*  row indexed by 2 */
-            };
-            int rowLength = a.GetLength(0);
-            int columnLength = a.GetLength(1);
-            int matrixElements = 3;
-            int[,] aux = new int[rowLength, columnLength];
+            // 4 rows and 4 columns
+            int[,] array = new int[4, 4] {
+                                            { 1, 2, 3, 4 },
+                                            { 5, 6, 7, 8 },
+                                            { 9, 10, 11, 12 },
+                                            { 13, 14, 15, 16 }
+                                          };
 
-            for (int row = 0; row < rowLength; row++)
+            int matrixElements = 4;
+
+            for (int j = 0; j < matrixElements; j++)
             {
-                for (int col = 0; col < columnLength; col++)
-                {
-                    //run a loop in each cycle from N – row – 1
-                    aux[col, matrixElements - row - 1] = a[row, col];
-                }
-            }
-
-            for (int i = 0; i < rowLength; i++)
-            {
-                for (int j = 0; j < columnLength; j++)
-                {
-                    Console.Write(" " + aux[i, j]);
-                }
-
+                for (int i = matrixElements - 1; i >= 0; i--)
+                    Console.Write(array[i, j] + " ");
                 Console.WriteLine();
             }
-
-            
         }
     }
 }

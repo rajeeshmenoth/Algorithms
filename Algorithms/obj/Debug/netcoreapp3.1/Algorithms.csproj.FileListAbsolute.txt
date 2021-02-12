@@ -32,3 +32,4 @@ C:\Users\rajeesh\github\Algorithms\Algorithms\obj\Debug\netcoreapp3.1\Algorithms
 C:\Users\rajeesh\github\Algorithms\Algorithms\obj\Debug\netcoreapp3.1\Algorithms.dll
 C:\Users\rajeesh\github\Algorithms\Algorithms\obj\Debug\netcoreapp3.1\Algorithms.pdb
 C:\Users\rajeesh\github\Algorithms\Algorithms\obj\Debug\netcoreapp3.1\Algorithms.genruntimeconfig.cache
+C:\Users\rajeesh\github\Algorithms\Algorithms\obj\Debug\netcoreapp3.1\Algorithms.csprojAssemblyReference.cache
