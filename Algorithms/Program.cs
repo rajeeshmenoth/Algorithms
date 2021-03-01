@@ -50,8 +50,8 @@ namespace Algorithms
             #endregion
 
             #region Recursion
-            Recursion.Recursion.RecursionAscending(3);
-            Recursion.Recursion.RecursionDescending(3);
+            Console.WriteLine("Recursion Ascending & Descending Sorting");
+            Recursion.Recursion.RecursionSort(3);
             #endregion
 
             #region Reverse a String

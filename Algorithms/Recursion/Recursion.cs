@@ -1,37 +1,35 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Text;
 
 namespace Algorithms.Recursion
 {
     public static class Recursion
     {
+		private static StringBuilder Descending { get; set; } = new StringBuilder();
+		private static StringBuilder Ascending { get; set; } = new StringBuilder();
 		/// <summary>
-		/// Recursion method ascending order.
+		/// Recursion method ascending & descending order.
 		/// </summary>
-		/// <param name="n"></param>
-		public static void RecursionAscending(int n)
+		/// <param name="element"></param>
+		public static void AscendingAndDescendingOrder(int element)
 		{
-			if (0 < n)
+			if (0 < element)
 			{
-				// first print the value then recursion will trigger.
-				Console.WriteLine($"Ascending order : {n}");
-				RecursionAscending(n - 1);
+				Descending.Append(element);
+				AscendingAndDescendingOrder(element - 1);
+				Ascending.Append(element);
 			}
 		}
 
 		/// <summary>
-		/// Recursion method descending order.
+		/// Recursion method.
 		/// </summary>
-		/// <param name="n"></param>
-		public static void RecursionDescending(int n)
+		/// <param name="element"></param>
+		public static void RecursionSort(int element)
 		{
-			if (0 < n)
-			{
-				// first recursion then print the value.
-				RecursionDescending(n - 1);
-				Console.WriteLine($"Descending order : {n}");
-			}
+			AscendingAndDescendingOrder(element);
+			Console.WriteLine($"Ascending Order: {string.Join(",", Ascending)}");
+			Console.WriteLine($"Descending Order: {string.Join(",", Descending)}");
 		}
 	}
 }
